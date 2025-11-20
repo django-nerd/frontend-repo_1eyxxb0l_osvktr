@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const API_BASE = import.meta.env.VITE_BACKEND_URL || ''
 
 export default function Contact() {
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [status, setStatus] = useState('idle')
 
   async function handleSubmit(e) {
     e.preventDefault()
